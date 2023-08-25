@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Preahvihear&family=Roboto&family=Rubik:wght@600&family=Ubuntu&family=VT323&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  background-color: white;;
+  border-radius: 15px;
+  width: 450px;
+  height: 300px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+p {
+  font-size: 27px;
+}
+
+.room-form {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.room-form input {
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgb(104, 104, 104);
+  padding-left: 9px;
+  width: 300px;
+  height: 36px;
+  font-size: 15px;
+}
+
+.room-form button {
+  border-radius: 3px;
+  cursor: pointer;
+  width: 69px;
+  padding: 9px;
+  font-size: 15px;
+  background-color: rgb(59, 59, 255);
+  border: none;
+  color: white;
+  transition: background-color 0.18s;
+}
+
+.room-form button:hover {
+  background-color: rgb(0, 0, 222);
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 90vw;
+  }
+}
