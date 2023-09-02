@@ -1,6 +1,6 @@
 const { users, rooms, room } = require('../data/data')
 
-async function checkRoom(socket, data) {
+function checkRoom(socket, data) {
   users[socket.id] = data.name
   room[socket.id] = data.room
   const existedRoom = rooms[data.room] // true or false
