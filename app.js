@@ -1,11 +1,10 @@
 const express = require('express')
-const { join } = require('path')
 
 const application = (app) => {
 
   // middlewares
   app.set('view engine', 'ejs')
-  app.use(express.static(join(__dirname, 'public')))
+  app.use(express.static('public'))
   app.use(express.urlencoded({ extended: false }))
 
   // get routes
